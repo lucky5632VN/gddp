@@ -2,8 +2,6 @@ import { ethnicities } from "@/data/ethnicities";
 import { EthnicityDetailClient } from "@/components/custom/ethnicity-detail-client";
 import { notFound } from "next/navigation";
 
-// Next.js 16 - Instant Navigation Validation
-export const unstable_instant = { prefetch: 'static' };
 
 interface PageProps {
   params: Promise<{ slug: string }>;

@@ -6,8 +6,6 @@ import { BocMoTimeline } from "@/components/custom/boc-mo-timeline";
 import { Navbar } from "@/components/custom/navbar";
 import Script from "next/script";
 
-// Next.js 16 - Instant Navigation Validation (Disabled for Home to avoid build error)
-export const unstable_instant = false;
 
 export default function Home() {
   const jsonLd = {
