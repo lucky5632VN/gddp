@@ -8,21 +8,8 @@ import Script from "next/script";
 
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Di sản Nghệ An | Nghe An Heritage",
-    "description": "Nền tảng bảo tồn và giới thiệu di sản văn hóa các dân tộc tại Nghệ An.",
-    "breadcrumb": "Trang chủ",
-  };
-
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-heritage-turquoise/30">
-      <Script
-        id="json-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       
       <Navbar />
 
