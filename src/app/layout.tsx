@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 
 const inter = Inter({
@@ -29,7 +30,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full font-sans text-foreground bg-background">
-        {children}
+        <Suspense fallback={null}>
+          {children}
+        </Suspense>
       </body>
     </html>
   );

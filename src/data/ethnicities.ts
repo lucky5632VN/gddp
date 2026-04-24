@@ -271,13 +271,13 @@ export const ethnicities: Ethnicity[] = [
         id: "men-men",
         name: "Mèn mén",
         description: "Lương thực chính làm từ ngô hạt nghiền nhỏ, đồ chín bằng hơi, biểu hiện cho sức sống bền bỉ trên núi cao.",
-        imageUrl: "/images/cuisines/men_men.png"
+        imageUrl: "/images/hmong_cuisine.png"
       },
       {
         id: "thang-co",
         name: "Thắng cố",
         description: "Món canh hầm từ thịt và nội tạng (thường là ngựa hoặc bò) với 12 loại gia vị thảo mộc núi rừng.",
-        imageUrl: "/images/cuisines/thang_co.png"
+        imageUrl: "/images/hmong_cuisine.png"
       },
       {
         id: "thit-gac-bep-mong",
@@ -289,10 +289,10 @@ export const ethnicities: Ethnicity[] = [
         id: "ruou-ngo",
         name: "Rượu Ngô",
         description: "Kết tinh từ hạt ngô nương đá, là linh hồn trong các nghi lễ và vòng tròn đoàn kết bản làng.",
-        imageUrl: "/images/cuisines/ruou_ngo.png"
+        imageUrl: "/images/rituals/ruou_ngo_icon.png"
       }
     ],
-    imageUrl: "/images/mong_heritage.png"
+    imageUrl: "/images/hmong_history.png"
   },
   {
     id: "o-du",

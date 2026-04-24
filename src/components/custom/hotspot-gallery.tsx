@@ -34,15 +34,15 @@ export function HotspotGallery() {
   ];
 
   return (
-    <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-white/10 bg-slate-900 group shadow-2xl">
+    <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-slate-200 bg-slate-100 group shadow-2xl">
       <Image
         src="/images/kho_mu_ethnography.png"
-        alt="Kho Mu Ethnography"
+        alt="Dân tộc học Khơ Mú"
         fill
-        className="object-cover opacity-70 group-hover:scale-105 transition-transform duration-1000"
+        className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000"
       />
       
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
 
       {hotspots.map((spot) => (
         <div
@@ -62,18 +62,18 @@ export function HotspotGallery() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-6 w-64 p-6 bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl z-20"
+              className="absolute bottom-full left-1/2 -translate-x-1/2 mb-6 w-64 p-6 bg-white/95 backdrop-blur-xl border border-slate-200 rounded-2xl shadow-2xl z-20"
             >
               <h4 className="text-heritage-turquoise font-bold mb-2">{spot.title}</h4>
-              <p className="text-slate-300 text-sm leading-relaxed">{spot.description}</p>
-              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-slate-900/90" />
+              <p className="text-slate-600 text-sm leading-relaxed">{spot.description}</p>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-white/95" />
             </motion.div>
           )}
         </div>
       ))}
 
       <div className="absolute bottom-10 left-10 z-10">
-        <span className="text-white font-bold bg-slate-950/40 backdrop-blur-md px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-white/5">
+        <span className="text-white font-bold bg-black/20 backdrop-blur-md px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-white/10">
           Khám phá Trí tuệ Sinh thái
         </span>
       </div>

@@ -18,16 +18,16 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative h-screen w-full overflow-hidden bg-slate-950 flex items-center justify-center"
+      className="relative h-screen w-full overflow-hidden bg-background flex items-center justify-center"
     >
       {/* Background Layer with subtle movement */}
       <motion.div
         style={{ scale }}
-        className="absolute inset-0 z-0 bg-[url('/images/nghean_hero.png')] bg-cover bg-center opacity-40"
+        className="absolute inset-0 z-0 bg-[url('/images/nghean_hero.png')] bg-cover bg-center opacity-80"
       />
 
       {/* Decorative Gradient Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-slate-950/20 to-slate-950" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/20 via-transparent to-background" />
 
       {/* Content Layer */}
       <motion.div
@@ -47,17 +47,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-5xl md:text-8xl font-heading text-white font-bold leading-tight mb-8"
+          className="text-5xl md:text-8xl font-heading text-slate-900 font-bold leading-tight mb-8"
         >
-          NGHE AN <br />
-          <span className="text-transparent bg-clip-text bg-national-gold">HERITAGE</span>
+          DI SẢN <br />
+          <span className="text-transparent bg-clip-text bg-national-gold uppercase">NGHỆ AN</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-sans leading-relaxed"
+          className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto font-sans leading-relaxed"
         >
           Khám phá vẻ đẹp vĩnh cửu và tinh hoa văn hóa của các dân tộc Thổ, Khơ Mú, Thái, và Ơ Đu nơi miền Tây xứ Nghệ.
         </motion.p>
@@ -70,7 +70,7 @@ export function Hero() {
         >
           <Button
             size="lg"
-            className="rounded-full px-12 py-8 text-lg font-bold uppercase tracking-widest bg-white text-slate-950 hover:bg-heritage-turquoise hover:text-white transition-all duration-300 shadow-2xl"
+            className="rounded-full px-12 py-8 text-lg font-bold uppercase tracking-widest bg-slate-900 text-white hover:bg-heritage-turquoise transition-all duration-300 shadow-2xl"
             onClick={() => document.getElementById("ethnicities-grid")?.scrollIntoView({ behavior: "smooth" })}
           >
             Khám phá tinh hoa
