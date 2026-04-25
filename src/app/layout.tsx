@@ -1,3 +1,4 @@
+import { HeritageAIAssistant } from "@/components/custom/heritage-ai-assistant";
 import "./globals.css";
 
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
     >
       <body className="min-h-full font-sans text-foreground bg-background">
         {children}
+        <HeritageAIAssistant />
       </body>
     </html>
   );
