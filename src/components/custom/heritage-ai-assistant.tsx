@@ -107,12 +107,11 @@ export function HeritageAIAssistant() {
                         ? "bg-slate-900 text-white rounded-tr-none" 
                         : "bg-white border border-slate-100 shadow-sm rounded-tl-none text-slate-700"
                     }`}>
-                      <ReactMarkdown 
-                        remarkPlugins={[remarkGfm]} 
-                        className="markdown-content animate-in fade-in slide-in-from-bottom-1 duration-700"
-                      >
-                        {msg.content}
-                      </ReactMarkdown>
+                      <div className="markdown-content animate-in fade-in slide-in-from-bottom-1 duration-700">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {msg.content}
+                        </ReactMarkdown>
+                      </div>
                     </div>
                   </div>
                 </div>
